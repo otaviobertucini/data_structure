@@ -35,10 +35,26 @@ void merge(int list[], int begin, int pivot, int end){
             else{
                 aux[i] = list[index2];
                 index2++;
-            }
+        int main() {
+    int i, size=10;
+    int list[10] = {8, 1, 3, 6, 4, 2, 10, 9, 5, 7};
+    mergeSort(list);
+    for(i=0; i<size; i++)
+        cout << list[i] << endl;
+    return 0;
+}    }
         }
     }
     for(i=0, j=begin; i<size; i++, j++){
         list[j] = aux[i];
     }
+}
+
+int main() {
+    int i, size=10;
+    int list[10] = {8, 1, 3, 6, 4, 2, 10, 9, 5, 7};
+    split(list, 0, 9);
+    for(i=0; i<size; i++)
+        cout << list[i] << endl;
+    return 0;
 }
