@@ -1,11 +1,11 @@
 //List must be sorted
 void binary(int array[], int e, int begin, int end){
     int middle = (begin + end)/2;
+    if(array[middle] == e){
+        cout << "Elemento na posição: " << middle << endl;
+        return;
+    }
     if(begin == end){
-        if(array[middle] == e){
-            cout << "Elemento na posição: " << middle << endl;
-            return;
-        }
         cout << "Elemento não encontrado!" << endl;
         return;
     }
